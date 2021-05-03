@@ -1,0 +1,31 @@
+.logo
+{
+    width: 10%;
+    height: 10%;
+    margin-left: 140px;
+}
+#contentnav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 140px;
+    align-content: space-between;
+}
+#recherche
+{
+    margin-left: 140px;
+}
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+h1, p
+{
+    margin-left: 140px;
+    margin-right: 140px;
+}
