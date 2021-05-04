@@ -2,30 +2,121 @@
 {
     width: 10%;
     height: 10%;
-    margin-left: 140px;
+    margin-left: 135px;
 }
 #contentnav
 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 140px;
+    margin-right: 135px;
     align-content: space-between;
 }
 #recherche
 {
-    margin-left: 140px;
+    margin-left: 135px;
 }
 #filtres
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 135px;
+    margin-right: 480px;
 }
 h1, p
 {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+section
+{
+    margin-left: 135px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+article
+{
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #F2F2F2;
+    width: 700px;
+}
+.cannebiere
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+.port
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+.mouettes
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+.mer
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+.panier
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+.amina
+{
+    border-radius: 10%;
+    border: 4px white solid;
+}
+#photos1
+{
+    display: flex;
+    justify-content: space-between;
+}
+#photos2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside
+{   
+    margin-left: 34px;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #F2F2F2;
+    width: 285px;
+}
+.soleil
+{
+    border-radius: 15px;
+    border: 4px white solid;
+}
+.eau
+{
+    border-radius: 15px;
+    border: 4px white solid;
+}
+.bleublanc
+{
+    border-radius: 15px;
+    border: 4px white solid;
+}
+#photosaside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
