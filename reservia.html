@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <meta charset="utf-8" />
     <title>Reservia</title>
     <link rel="stylesheet" type="text/css" href="reserviastyle.css">
 </head>
 <body>
-    <h1></h1>
+    <header>
+    <img class="logo" src="projet_2_reservia/images/logo/Reservia@3x.png"
+   alt="logo">
+   <nav>
+        <div id="contentnav">
+            <a href="#Hébergements">Hébergements</a>
+            <a href="#Activités">Activités</a>
+            <a href="inscription.html">S'inscire</a>
+        </div>
+    </nav>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou en pleine nature</p>
+    <form method="post">
+        <label for="recherche"></label><input type="search" id="recherche" placeholder="Marseille, France">
+    </form><br>
+        <div id="filtres">
+            <strong>Filtres</strong>
+            <div id="economique">Économique</div>
+            <div id="familial">Familial</div>
+            <div id="romantique">Romantique</div>
+            <div id="animaux">Animaux autorisés</div>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </header>
+    <section>
+        <article class="articlesection1">
+            <div id="Hébergements"><h2>Hébergements à Marseille</h2></div>
+            <div id="photos1">
+            <img class="cannebiere" alt="Auberge la Cannebière" src="projet_2_reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="190" height="150">
+            <img class="port" alt="Hôtel du port" src="projet_2_reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="190" height="150">
+            <img class="mouettes" alt="Hôtel Les mouettes" src="projet_2_reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="190" height="150">
+            </div><br>
+            <div id="photos2">
+            <img class="mer" alt="Hôtel de la mer" src="projet_2_reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="190" height="150">
+            <img class="panier" alt="Auberge du panier" src="projet_2_reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="190" height="150">
+            <img class="amina" alt="Chez Amina" src="projet_2_reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="190" height="150">
+            </div><br>
+            <h3>Afficher plus</h3>
+        </article>
+        <aside>
+            <h2>Les plus populaires</h2>
+            <div id="photosaside">
+                <img class="soleil" alt="Hôtel Le soleil du matin" src="projet_2_reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="250" height="110">
+                <img class="eau" alt="Au coeur de l'eau Chambres d'hôtes" src="projet_2_reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" width="250" height="110">
+                <img class="bleublanc" alt="Hôtel tout bleu et Blanc" src="projet_2_reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" width="250" height="110">
+            </div>
+        </aside>
+    </section>
+    <section>
+        <article class="articlesection2">
+            <div id="Activités"><h2>Activités à Marseille</h2></div>
+                <div class="wraper">
+                    <img class="vieuxport" alt="Vieux port de Marseille" src="projet_2_reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="250" height="340">
+                    <img class="pomegues" alt="Fort de Pomègues" src="projet_2_reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="250" height="160">
+                    <img class="frioul" alt="Îles du Frioul" src="projet_2_reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" width="250" height="160">
+                    <img class="calanques" alt="Parc National des Calanques" src="projet_2_reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" width="250" height="340">
+                    <img class="notredame" alt="Notre-Dame-de-la-Garde" src="projet_2_reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="250" height="160">
+                    <img class="longchamp" alt="Parc Longchamp" src="projet_2_reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" width="250" height="160">
+                </div>
+        </article>
+    </section>
 </body>
 </html>
