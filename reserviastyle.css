@@ -1,0 +1,195 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+.logo
+{
+    width: 10%;
+    height: 10%;
+    margin-left: 135px;
+}
+#contentnav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 135px;
+    align-content: space-between;
+}
+#recherche
+{
+    margin-left: 135px;
+}
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 480px;
+}
+h1, p
+{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+section
+{
+    margin-left: 135px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.articlesection1
+{
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #F2F2F2;
+    width: 700px;
+}
+.cannebiere
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.port
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.mouettes
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.mer
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.panier
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.amina
+{
+    border-radius: 10%;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+#photos1
+{
+    display: flex;
+    justify-content: space-between;
+}
+#photos2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside
+{   
+    margin-left: 34px;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #F2F2F2;
+    width: 285px;
+}
+.soleil
+{
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.eau
+{
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.bleublanc
+{
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+#photosaside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.articlesection2
+{
+    margin-top: 30px;
+}
+.wraper
+{
+    display: grid;
+    grid-template-columns: 252px 252px 252px 252px;
+    column-gap: 20px;
+    row-gap: 11px;
+}
+.vieuxport
+{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.pomegues
+{
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.frioul
+{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 15px;
+    border: 4px white solid; 
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.calanques
+{
+    grid-column: 3;
+    grid-row: 1 / 3;
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.notredame
+{
+    grid-column: 4;
+    grid-row: 1;
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.longchamp
+{
+    grid-column: 4;
+    grid-row: 2;
+    border-radius: 15px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
