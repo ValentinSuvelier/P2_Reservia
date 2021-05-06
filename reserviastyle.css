@@ -36,6 +36,7 @@ h1, p
 
 section
 {
+    margin-top: 35px;
     margin-left: 135px;
     margin-right: 120px;
     display: flex;
@@ -134,10 +135,6 @@ aside
     justify-content: space-around;
 }
 
-.articlesection2
-{
-    margin-top: 30px;
-}
 .wraper
 {
     display: grid;
@@ -192,4 +189,71 @@ aside
     border-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+}
+
+footer
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 105px;
+    margin-right: 90px; 
+    padding: 30px;
+    background-color: #F2F2F2;
+}
+.wrapfooter
+{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 10px;
+    column-gap: 120px;
+}
+.propos
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+.fonctionnement
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+.conditions
+{
+    grid-column: 1;
+    grid-row: 3;
+}
+.données
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+.hébergements
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+.charte
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+.soumettre
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+.assistance
+{
+    grid-column: 3;
+    grid-row: 1;
+}
+.aide
+{
+    grid-column: 3;
+    grid-row: 2;
+}
+.contact
+{
+    grid-column: 3;
+    grid-row: 3;
 }
