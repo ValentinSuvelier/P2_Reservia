@@ -1,6 +1,6 @@
 body
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Arial, Verdana, sans-serif;
 }
 .logo
 {
@@ -103,6 +103,11 @@ figure
     max-width: 190px;
     margin: auto;
 }
+figcaption
+{
+    background-color: white;
+       
+}
 .articlesection1
 {
     border-radius: 20px;
@@ -113,42 +118,13 @@ figure
     background-color: #F2F2F2;
     width: 700px;
 }
-.cannebiere
+.photoH
 {
     border-radius: 10%;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
 }
-.port
-{
-    border-radius: 10%;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.mouettes
-{
-    border-radius: 10%;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.mer
-{
-    border-radius: 10%;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.panier
-{
-    border-radius: 10%;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.amina
-{
-    border-radius: 10%;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
+
 #photos1
 {
     display: flex;
