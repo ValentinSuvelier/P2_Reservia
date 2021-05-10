@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <title>Reservia</title>
     <link rel="stylesheet" type="text/css" href="reserviastyle.css">
+    <script src="https://kit.fontawesome.com/32706c31d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
     <img class="logo" src="projet_2_reservia/images/logo/Reservia@3x.png"
    alt="logo">
+
    <nav>
         <div id="contentnav">
             <a href="#Hébergements">Hébergements</a>
@@ -16,37 +18,221 @@
             <a href="inscription.html">S'inscire</a>
         </div>
     </nav>
+
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
-    <form method="post">
-        <label for="recherche"></label><input type="search" id="recherche" placeholder="Marseille, France">
-    </form><br>
+    <p class="centreville">En plein centre ville ou en pleine nature</p>
+
+    <form class="searchbar" method="post"><i class="fas fa-map-marker-alt"></i> 
+        <label for="search"></label><input type="search" id="search" placeholder="Marseille, France">
+    </form><br> <!--barre de recherche-->
+
         <div id="filtres">
             <strong>Filtres</strong>
-            <div id="economique">Économique</div>
-            <div id="familial">Familial</div>
-            <div id="romantique">Romantique</div>
-            <div id="animaux">Animaux autorisés</div>
+            <button>
+            <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-money-bill-wave fa-stack-1x"></i>
+            </span><strong>Économique</strong>
+            </button>
+            
+            <button>
+            <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-child fa-stack-1x"></i>
+            </span><strong>Familial</strong>
+            </button>
+
+            <button>
+            <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-heart fa-stack-1x"></i>
+            </span><strong>Romantique</strong>
+            </button>
+
+            <button>
+                <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-dog fa-stack-1x"></i>
+            </span><strong>Animaux autorisés</strong>
+            </button>
         </div>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p class="dispo"><span class="fa-stack">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-info fa-stack-1x"></i>
+          </span>Plus de 500 logements sont disponibles dans cette ville</p>
     </header>
+
+    <!--Section "hébergements à Marseille-->
+
     <section>
-        <article class="articlesection1">
+        <article class="articlesection1"> 
             <div id="Hébergements"><h2>Hébergements à Marseille</h2></div>
             <div id="photos1">
-            <img class="cannebiere" alt="Auberge la Cannebière" src="projet_2_reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="190" height="150">
-            <img class="port" alt="Hôtel du port" src="projet_2_reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="190" height="150">
-            <img class="mouettes" alt="Hôtel Les mouettes" src="projet_2_reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="190" height="150">
+                <figure>
+                    <img class="cannebiere" alt="Auberge la Cannebière" src="projet_2_reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="190" height="150">
+                <div class="figcannebiere">
+                    <figcaption><h3>Auberge la Cannebière</h3></figcaption> <!--Légende de l'image-->
+                        <p>Nuit à partir de <b>25€</b></p>
+                        <div>
+                            <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                </div>
+                </figure>
+
+                <figure>
+                    <img class="port" alt="Hôtel du port" src="projet_2_reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="190" height="150">
+                <div class="figport">
+                    <figcaption><h3>Hôtel du port</h3></figcaption>
+                    <p>Nuit à partir de <b>52€</b></p>
+                        <div>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                </div>
+                </figure>
+
+                <figure>
+                    <img class="mouettes" alt="Hôtel Les mouettes" src="projet_2_reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="190" height="150">
+                <div class="figmouettes">
+                    <figcaption><h3>Hôtel Les mouettes</h3></figcaption>
+                    <p>Nuit à partir de <b>76€</b></p>
+                        <div>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                </div>
+                </figure>
             </div><br>
+
+        <!--"Hébergements à Marseille" 2ème ligne-->
+
             <div id="photos2">
-            <img class="mer" alt="Hôtel de la mer" src="projet_2_reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="190" height="150">
+                <figure>
+            <img class="mer" alt="Hôtel de la mer" src="projet_2_reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="190" height="150">
+                <div class="figmer">
+                    <figcaption><h3>Hôtel de la mer</h3></figcaption>
+                    <p>Nuit à partir de <b>46€</b></p>
+                        <div>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                </div>
+                </figure>
+
+                <figure>
             <img class="panier" alt="Auberge du panier" src="projet_2_reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="190" height="150">
+                <div class="figpanier">
+                    <figcaption><h3>Auberge du panier</h3></figcaption>
+                    <p>Nuit à partir de <b>23€</b></p>
+                    <div>
+                        <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span style="color: #F2F2F2;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+                </figure>
+
+                <figure>
             <img class="amina" alt="Chez Amina" src="projet_2_reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="190" height="150">
-            </div><br>
-            <h3>Afficher plus</h3>
+                <div class="figamina">
+                    <figcaption><h3>Chez Amina</h3></figcaption>
+                    <p>Nuit à partir de <b>96€</b></p>
+                        <div>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                </div>
+                </figure>
+        </div><br>
+        
+        <h3>Afficher plus</h3>
+            
         </article>
+
+        <!--Partie droite "les plus populaires"-->
+        
         <aside>
-            <h2>Les plus populaires</h2>
+            <div class="populaires">
+            <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
+            </div>
             <div id="photosaside">
                 <img class="soleil" alt="Hôtel Le soleil du matin" src="projet_2_reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="250" height="110">
                 <img class="eau" alt="Au coeur de l'eau Chambres d'hôtes" src="projet_2_reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" width="250" height="110">

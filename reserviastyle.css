@@ -16,10 +16,7 @@ body
     margin-right: 135px;
     align-content: space-between;
 }
-#recherche
-{
-    margin-left: 135px;
-}
+
 #filtres
 {
     display: flex;
@@ -28,11 +25,67 @@ body
     margin-left: 135px;
     margin-right: 480px;
 }
-h1, p
+h1, h2
+{
+    font-size: 20px;
+}
+h3
+{
+    font-size: 15px;
+}
+h1
 {
     margin-left: 135px;
     margin-right: 135px;
 }
+.centreville
+{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.dispo
+{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.fa-map-marker-alt
+{
+    margin-left: 135px;
+}
+.fa-money-bill-wave
+{
+    color: #0065FC;
+}
+.fa-child
+{
+    color: #0065FC;
+}
+.fa-heart
+{
+    color: #0065FC;
+}
+.fa-dog
+{
+    color: #0065FC;
+}
+.fa-info
+{
+    color: #0065FC;
+}
+.fa-circle
+{
+   color: #DEEBFF;
+}
+button
+{
+    border-radius: 30px;
+    background-color: white;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 15px 0 0;
+}
+
+/*section gauche "hébergements à Marseille"*/
 
 section
 {
@@ -43,6 +96,13 @@ section
     flex-direction: row;
 }
 
+figure
+{
+    display: flex;
+    flex-flow: column;
+    max-width: 190px;
+    margin: auto;
+}
 .articlesection1
 {
     border-radius: 20px;
@@ -100,6 +160,15 @@ section
     justify-content: space-between;
 }
 
+/*partie droite "les plus populaires"*/
+
+.populaires
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 aside
 {   
     margin-left: 34px;
