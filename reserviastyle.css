@@ -2,28 +2,17 @@ body
 {
     font-family: 'Raleway', Arial, Verdana, sans-serif;
 }
-.logo
+nav a:hover /*place un liseret bleu en haut du nav*/
 {
-    width: 10%;
-    height: 10%;
-    margin-left: 135px;
+    border-top: 2.5px solid #0065FC;
 }
-#contentnav
+a:link
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 135px;
-    align-content: space-between;
+    text-decoration: none; /*retire le soulignement des liens*/
 }
-
-#filtres
+a
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 135px;
-    margin-right: 480px;
+    color: black; /*applique la couleur aux liens*/
 }
 h1, h2
 {
@@ -38,34 +27,120 @@ h1
     margin-left: 135px;
     margin-right: 135px;
 }
-.centreville
+
+/*-----logo-----*/
+
+.logo
 {
+    width: 10%;
+    height: 10%;
     margin-left: 135px;
-    margin-right: 135px;
 }
-.dispo
+
+
+/*-----navigation-----*/
+
+.navlogo
 {
-    margin-left: 135px;
-    margin-right: 135px;
+    display: flex;
+    flex-direction: row;
+}
+.contentnav
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.navheb
+{
+    width: 190px;
+    display: flex;
+}
+.navact
+{
+    width: 190px;
+    display: flex;
+}
+.navinscr
+{
+    width: 190px;
+    display: flex;
+}
+
+/*-----barre de recherche-----*/
+
+.searchbar
+{
+    display: flex;
+    flex-direction: row;
 }
 .fa-map-marker-alt
 {
+    margin-left: 5px;
+    padding: 10px;
+}
+.marqueur
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F2F2;
+    height: 40px;
+    width: 40px;
     margin-left: 135px;
 }
+#search
+{
+    height: 40px;
+    width: 180px;
+    border:1px solid #F2F2F2;
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding-left: 12px;
+}
+.rechercher
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    height: 30px;
+    color: white;
+    font-family: 'Raleway';
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+/*-----Filtres-----*/
+
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 135px;
+    margin-right: 440px;
+}
+/*icônes -(filtres)-*/
 .fa-money-bill-wave
 {
+    
+    margin-top: 3px;
     color: #0065FC;
 }
 .fa-child
 {
+    margin-top: 3px;
     color: #0065FC;
 }
 .fa-heart
 {
+    margin-top: 3px;
     color: #0065FC;
 }
 .fa-dog
 {
+    margin-top: 3px;
     color: #0065FC;
 }
 .fa-info
@@ -76,16 +151,31 @@ h1
 {
    color: #DEEBFF;
 }
-button
+/*fin icônes -(filtres)-*/
+
+.filtre /*bordure des filtres*/
 {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-right: 15px;
+    border: 2px solid #CCCCCC;
     border-radius: 30px;
-    background-color: white;
-    font-size: 100%;
-    font-family: 'Raleway', sans-serif;
-    padding: 0 15px 0 0;
 }
 
-/*section gauche "hébergements à Marseille"*/
+
+.centreville
+{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.dispo
+{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+/*-----section gauche "hébergements à Marseille"-----*/
 
 section
 {
@@ -96,7 +186,7 @@ section
     flex-direction: row;
 }
 
-figure
+.figuresection
 {
     display: flex;
     flex-flow: column;
@@ -106,8 +196,15 @@ figure
 figcaption
 {
     background-color: white;
-       
+    width: 190px; 
+    height: 60px;
+    border: 4px white solid;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+    font-size: 12px;
 }
+
 .articlesection1
 {
     border-radius: 20px;
@@ -118,25 +215,28 @@ figcaption
     background-color: #F2F2F2;
     width: 700px;
 }
-.photoH
+.photoHeberg
 {
-    border-radius: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 190px;
+    height: 100px;
 }
 
-#photos1
+#photos1 /*1ère ligne d'image dans la section hébergements*/
 {
     display: flex;
     justify-content: space-between;
 }
-#photos2
+#photos2 /*2ème ligne d'image dans la section hébergements*/
 {
     display: flex;
     justify-content: space-between;
 }
 
-/*partie droite "les plus populaires"*/
+/*-----partie droite "les plus populaires"-----*/
 
 .populaires
 {
@@ -155,30 +255,45 @@ aside
     background-color: #F2F2F2;
     width: 285px;
 }
-.soleil
+.figpop /*figure de la partie "les plus populaires"*/
 {
+    display: flex;
+    flex-flow: row;
+    max-width: 250px;
+    margin: auto;
+}
+.fcpop /*figcaption de la partie "les plus populaires"*/
+{
+    background-color: white;
+    width: 150px; 
+    height: 110px;
+    border: 4px white solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0%;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+    font-size: 12px;
+}
+
+.photoPop /*caractéristiques des images partie "populaires"*/
+{
+    width: 110px;
+    height: 110px;
     border-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
-.eau
-{
-    border-radius: 15px;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.bleublanc
-{
-    border-radius: 15px;
-    border: 4px white solid;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
+
 #photosaside
 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
+/*Partie du bas "activités à Marseille"*/
 
 .wraper
 {
@@ -191,50 +306,94 @@ aside
 {
     grid-column: 1;
     grid-row: 1 / 3;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 300px;
 }
 .pomegues
 {
     grid-column: 2;
     grid-row: 1;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 120px;
 }
 .frioul
 {
     grid-column: 2;
     grid-row: 2;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid; 
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 120px;
 }
 .calanques
 {
     grid-column: 3;
     grid-row: 1 / 3;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 300px;
 }
 .notredame
 {
     grid-column: 4;
     grid-row: 1;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 120px;
 }
 .longchamp
 {
     grid-column: 4;
     grid-row: 2;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border: 4px white solid;
     box-shadow: 3px 3px 10px #CCCCCC;
+    width: 250px;
+    height: 120px;
 }
+.fcactiviteL /*figcaption des grandes images de la partie activité*/
+{
+    background-color: white;
+    width: 250px; 
+    height: 40px;
+    border: 4px white solid;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.fcactivite /*figcaption des images moyennes de la partie activité*/
+{
+    background-color: white;
+    width: 250px; 
+    height: 40px;
+    border: 4px white solid;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.figactiv
+{
+
+}
+
+/*-----Footer-----*/
 
 footer
 {
