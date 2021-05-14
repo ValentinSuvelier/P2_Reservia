@@ -310,7 +310,8 @@ aside
 {
     display: grid;
     grid-template-columns: 252px 252px 252px 252px;
-    column-gap: 12px;
+    column-gap: 25px;
+    width: 100%;
 }
 .vieuxport
 {
@@ -324,10 +325,8 @@ aside
 }
 .frioul
 {
-    display: grid;
     grid-column: 2;
-    grid-row: 2;
-    
+    grid-row: 2; 
 }
 .calanques
 {
@@ -343,8 +342,6 @@ aside
 {
     grid-column: 4;
     grid-row: 2;
-    position: relative;
-    bottom: 20px;
 }
 .imageM /*images de taille moyennes de la partie activités*/
 { 
@@ -352,14 +349,13 @@ aside
     width: 240px;
     height: 140px;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    
+    border-top-right-radius: 15px;   
 }
 .imageL /*images de grande taille (vieux port et calanques) partie activités*/
 {
     box-shadow: 3px 3px 10px #CCCCCC;
     width: 240px;
-    height: 330px;
+    height: 360px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
