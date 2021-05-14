@@ -269,16 +269,18 @@ aside
 {
     display: flex;
     flex-flow: row;
-    max-width: 250px;
-    margin: auto;
+    width: 280px;
+    margin-top: 15px;
+    margin-left: -3px;
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
 }
 .fcpop /*figcaption de la partie "les plus populaires"*/
 {
+
     background-color: white;
-    width: 150px; 
+    width: 250px; 
     height: 118px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -309,7 +311,6 @@ aside
     display: grid;
     grid-template-columns: 252px 252px 252px 252px;
     column-gap: 12px;
-    
 }
 .vieuxport
 {
@@ -341,7 +342,9 @@ aside
 .longchamp
 {
     grid-column: 4;
-    grid-row: 2 / 3;
+    grid-row: 2;
+    position: relative;
+    bottom: 20px;
 }
 .imageM /*images de taille moyennes de la partie activités*/
 { 
@@ -350,6 +353,7 @@ aside
     height: 140px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    
 }
 .imageL /*images de grande taille (vieux port et calanques) partie activités*/
 {
