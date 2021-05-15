@@ -2,10 +2,25 @@ body
 {
     font-family: 'Raleway', Arial, Verdana, sans-serif;
 }
-nav a:hover /*place un liseret bleu en haut du nav*/
+
+/*-----liens-----*/
+
+nav a:hover
 {
-    border-top: 2px solid #0065FC; 
-    display: block;
+    border-top: 2px solid #0065FC; /*place un liseret bleu en haut du nav*/
+    color: #0065FC;
+    display: flex;
+}
+nav a
+{
+    display: flex;
+    padding: 25px 0px; /*monte le liseret bleu de "nav a:hover"*/
+}
+#filtres a:hover
+{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 25px;
 }
 a:link
 {
@@ -15,6 +30,7 @@ a
 {
     color: black; /*applique la couleur aux liens*/
 }
+
 h1, h2
 {
     font-size: 20px;
@@ -40,6 +56,7 @@ h1
 
 
 /*-----navigation-----*/
+
 nav 
 {
     display: flex;
@@ -58,22 +75,27 @@ nav
 {
     display: flex;
     flex-direction: row;
+    margin-right: 120px;
 }
 
 .navheb
 {
     width: 190px;
-    display: flex;
+    display: flex; 
+    justify-content: center;  
 }
 .navact
 {
     width: 190px;
-    display: flex;
+    display: flex; 
+    justify-content: center;  
 }
 .navinscr
 {
     width: 190px;
+    color: #0065FC;
     display: flex;
+    justify-content: center;
 }
 
 /*-----barre de recherche-----*/
@@ -126,11 +148,19 @@ nav
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 135px;
     margin-right: 440px;
 }
 /*icônes -(filtres)-*/
+.icones
+{
+    position: relative;
+    bottom: 4px;
+    right: 3px;
+}
 .fa-money-bill-wave
 {
     
@@ -168,30 +198,34 @@ nav
     align-items: center;
     height: 35px;
     padding-right: 15px;
-    border: 2px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
     border-radius: 30px;
 }
 
 .centreville
 {
     margin-left: 135px;
-    margin-right: 135px;
+    margin-right: 120px;
 }
 .dispo
 {
     margin-left: 135px;
-    margin-right: 135px;
+    margin-right: 120px;
 }
 
 /*-----section gauche "hébergements à Marseille"-----*/
 
-section
+.section1
 {
     margin-top: 35px;
     margin-left: 135px;
     margin-right: 120px;
     display: flex;
     flex-direction: row;
+}
+.section2
+{
+    margin-left: 100px;
 }
 
 .figuresection
@@ -251,9 +285,8 @@ section
 .populaires
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    
+    align-items: center;
 }
 aside
 {   
@@ -306,12 +339,19 @@ aside
 
 /*Partie du bas "activités à Marseille"*/
 
+#activites
+{
+    margin-left: 35px;
+    margin-top: 50px;
+}
+
 .wraper
 {
     display: grid;
     grid-template-columns: 252px 252px 252px 252px;
     column-gap: 25px;
     width: 100%;
+
 }
 .vieuxport
 {
@@ -390,7 +430,7 @@ aside
 
 footer
 {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 105px;
     margin-right: 90px; 
