@@ -196,7 +196,7 @@ nav
     margin-left: 130px;
     margin-right: 1rem;
     position: relative;
-    bottom: 7px;
+    top: 7px; 
 }
 .contentinfo
 {
