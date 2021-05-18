@@ -69,7 +69,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 40%;
 }
 .navlogo
 {
@@ -159,7 +159,7 @@ nav
 {
     position: relative;
     bottom: 4px;
-    right: 3px;
+    right: 7px;
 }
 .fa-money-bill-wave
 {
@@ -182,13 +182,38 @@ nav
     margin-top: 3px;
     color: #0065FC;
 }
-.fa-info
+.resulticon
+{
+    min-width: 2rem; /*rem = s'adapte à la taille de la police de l'élément*/
+    min-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border: solid 1px #CCCCCC;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 130px;
+    margin-right: 1rem;
+    position: relative;
+    bottom: 7px;
+}
+.contentinfo
+{
+    display: flex;
+}
+.fa-info 
 {
     color: #0065FC;
+    display: flex;
+    align-items: center;
 }
+
 .fa-circle
 {
    color: #DEEBFF;
+   position: relative;
+   top: 4px;
 }
 /*fin icônes -(filtres)-*/
 
@@ -207,14 +232,13 @@ nav
     margin-left: 135px;
     margin-right: 120px;
 }
-.dispo
-{
-    margin-left: 135px;
-    margin-right: 120px;
-}
 
 /*-----section gauche "hébergements à Marseille"-----*/
 
+#hebergements
+{
+    margin-bottom: 30px;
+}
 .section1
 {
     margin-top: 35px;
@@ -263,6 +287,7 @@ nav
 }
 .photoHeberg
 {
+    object-fit: cover; /*adapte l'image au conteneur*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
     width: 190px;
@@ -273,11 +298,16 @@ nav
 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 #photos2 /*2ème ligne d'image dans la section hébergements*/
 {
     display: flex;
     justify-content: space-between;
+}
+.afficher
+{
+    max-width: 90px;
 }
 
 /*-----partie droite "les plus populaires"-----*/
@@ -295,6 +325,7 @@ aside
     padding-top: 12px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 20px;
     background-color: #F2F2F2;
     width: 285px;
 }
@@ -318,18 +349,31 @@ aside
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 0%; 
-    font-size: 12px;
+    font-size: 12px; 
+}
+.fccontent
+{
+    margin: 10px;
 }
 
 .photoPop /*caractéristiques des images partie "populaires"*/
 {
+    object-fit: cover;
     width: 110px;
     height: 118px;
     border-radius: 20px;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
 }
-
+.photobleublanc
+{
+    object-fit: cover;
+    width: 162px;
+    height: 118px;
+    border-radius: 20px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%; 
+}
 #photosaside
 {
     display: flex;
@@ -361,7 +405,7 @@ aside
 .pomegues
 {
     grid-column: 2;
-    grid-row: 1;   
+    grid-row: 1;  
 }
 .frioul
 {
@@ -385,6 +429,7 @@ aside
 }
 .imageM /*images de taille moyennes de la partie activités*/
 { 
+    object-fit: cover;
     box-shadow: 3px 3px 10px #CCCCCC;
     width: 240px;
     height: 140px;
@@ -393,6 +438,7 @@ aside
 }
 .imageL /*images de grande taille (vieux port et calanques) partie activités*/
 {
+    object-fit: cover;
     box-shadow: 3px 3px 10px #CCCCCC;
     width: 240px;
     height: 360px;
