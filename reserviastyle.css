@@ -64,56 +64,42 @@ h3
     font-size: 15px;
 }
 
-
-/*-----logo-----*/
-
-.logo
-{
-    width: 10%;
-    height: 10%;
-}
-
-
 /*-----navigation-----*/
 
-nav 
+.gridnav
 {
-    display: flex;
-    flex: 3;
-    justify-content: flex-end;
-    flex-direction: row;
+    display: grid;
+    max-width: 1075px;
+    grid-template-columns: 61% 13% 13% 13%;
 }
-#contentnav 
+.logo
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 40%;
-}
-.navlogo
-{
-    display: flex;
-    flex-direction: row;
-    
+    grid-column: 1 / 2;
+    grid-row: 1;
+    width: 20%;
+    height: 100%;
 }
 .navheb
 {
-    width: 190px;
+    grid-column: 2 / 3;
+    grid-row: 1;
     display: flex; 
     justify-content: center;  
 }
 .navact
 {
-    width: 190px;
+    grid-column: 3 / 4;
+    grid-row: 1;
     display: flex; 
-    justify-content: center;  
+    justify-content: center; 
 }
 .navinscr
 {
-    width: 190px;
+    grid-column: 4 / 5;
+    grid-row: 1;
     color: #0065FC;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
 }
 /*-----barre de recherche-----*/
 
