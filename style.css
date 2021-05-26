@@ -756,7 +756,6 @@ p
     color: #0065FC;
     display: flex; 
     justify-content: center; 
-    margin-left: 40px;
 }
 nav a:hover
 {
@@ -772,15 +771,15 @@ nav a:hover
 {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
     margin-left: 25px;
 }
 .marqueur 
 {
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
 }
 .fa-map-marker-alt
 {
@@ -792,19 +791,17 @@ nav a:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 150px;
+    height: 3rem;
 }
 #search
 {
-    height: 50px;
-    width: 300px;
+    height: 3rem;
     font-size: 20px;
+    width: 12rem;
 }
 .barre
 {
     display: flex;
-    max-width: 500px;
 }
 
 /*filtres*/
@@ -841,9 +838,10 @@ nav a:hover
 }
 .contentinfo
 {
-    margin: auto;
-    max-width: 500px;
-    padding: 15px 0 15px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 0 15px 25px;
+
 }
 .section1
 {
@@ -851,7 +849,7 @@ nav a:hover
     flex-direction: column-reverse;
     margin: auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
 }
 
 /*partie aside du responsive mobile*/
@@ -859,8 +857,10 @@ nav a:hover
 aside
 {
     margin: auto;
-    width: 500px;
+    width: 100%;
+    max-width: 1200px;
     padding: 0 0 30px;
+    border-radius: 0;
 }
 .populaires
 {
@@ -869,21 +869,21 @@ aside
 }
 .figaside1
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px; 
     max-height: 200px;
 }
 .figaside2
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px; 
     max-height: 200px;
 }
 .figaside3
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
@@ -915,6 +915,8 @@ aside
 .gridaside
 {
     justify-content: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 /*partie hébergements du responsive mobile*/
@@ -937,42 +939,42 @@ aside
 }
 .figuresection1
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px; 
     min-height: 200px;
     max-height: 200px;
 }
 .figuresection2
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
 }
 .figuresection3
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
 }
 .figuresection4
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
 }
 .figuresection5
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
 }
 .figuresection6
 {
-    min-width: 430px;
+    width: 100%;
     max-width: 430px;
     min-height: 200px;
     max-height: 200px;
@@ -1090,7 +1092,8 @@ aside
 {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 
