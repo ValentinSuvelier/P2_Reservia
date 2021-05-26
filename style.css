@@ -81,8 +81,10 @@ li
 {
     grid-column: 1 / 2;
     grid-row: 1;
-    width: 20%;
-    height: 100%;
+    min-width: 132px;
+    max-width: 132px;
+    min-height: 70px;
+    max-height: 70px;
 }
 .navheb
 {
@@ -152,6 +154,11 @@ li
 
 /*-----Filtres-----*/
 
+.titleandfilter
+{
+    display: flex;
+    flex-direction: row;
+}
 #filtres
 {
     display: flex;
@@ -169,27 +176,18 @@ li
 .icones
 {
     position: relative;
-    bottom: 4px;
-    right: 7px;
+    right: 4px;
+    border: solid 1px #DEEBFF;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.fa-money-bill-wave
+.faicones
 {
-    margin-top: 3px;
-    color: #0065FC;
-}
-.fa-child
-{
-    margin-top: 3px;
-    color: #0065FC;
-}
-.fa-heart
-{
-    margin-top: 3px;
-    color: #0065FC;
-}
-.fa-dog
-{
-    margin-top: 3px;
     color: #0065FC;
 }
 .resulticon
@@ -218,12 +216,6 @@ li
     align-items: center;
 }
 
-.fa-circle
-{
-   color: #DEEBFF;
-   position: relative;
-   top: 4px;
-}
 /*fin icônes -(filtres)-*/
 
 .filtre /*bordure des filtres*/
@@ -700,15 +692,15 @@ footer
 
 
 
-/*-----------responsive mobile-----------*/
+/*-----------responsive mobile et tablette-----------*/
 
 
-@media all and (max-width: 600px)  
+@media all and (max-width: 1200px)  
 
 {
     .contenus /*div incluant Header, Section 1 et 2 s'arrêtant au footer*/
 {
-    max-width: 550px;
+    max-width: 1200px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -730,7 +722,8 @@ p
     .gridnav
 {
     display: grid;
-    max-width: 600px;
+    max-width: 1200px;
+    width: 100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
 }
@@ -738,8 +731,6 @@ p
 {
     grid-column: 1 / 2;
     grid-row: 1;
-    width: 50%;
-    height: 100%;
     margin-left: 40px;
 }
 .navheb
@@ -781,8 +772,10 @@ nav a:hover
 {
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    padding: 0px;
     width: 100%;
+    max-width: 500px;
+    margin-left: 25px;
 }
 .marqueur 
 {
@@ -813,12 +806,34 @@ nav a:hover
     display: flex;
     max-width: 500px;
 }
+
+/*filtres*/
+
+.titleandfilter
+{
+    flex-direction: column;
+}
+.filtitle
+{
+    margin: 40px 0 0 30px;
+}
 #filtres
 {
-    margin-top: 40px;
     max-width: 500px;
-    margin: auto;
     padding: 15px;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.filtre
+{
+    height: 50px;
+    border: 2px solid #CCCCCC;
+}
+.icones
+{
+    width: 52px;
+    height: 52px;
 }
 .resulticon
 {
