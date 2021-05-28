@@ -15,6 +15,11 @@ body
 
 /*-----liens-----*/
 
+::placeholder
+{
+    font-weight: bold;
+    color: black;
+}
 nav a:hover
 {
     border-top: 2px solid #0065FC; /*place un liseret bleu en haut du nav*/
@@ -252,7 +257,6 @@ li
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     gap: 20px 20px;
-    
 }
 .figuresection1 
 { 
@@ -260,8 +264,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -271,8 +274,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -282,8 +284,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -293,8 +294,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -304,8 +304,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -315,8 +314,7 @@ li
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 3px 3px 10px #CCCCCC;
-    min-width: 180px;
-    max-width: 180px;
+    width: 100%;
     padding: 0%;
     margin: 0%;
 }
@@ -325,9 +323,7 @@ li
 {
     background-color: white;
     height: 4rem;
-    width: 12rem;
-    max-width: 100%;
-    max-height: 100%; 
+    width: 100%;
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px;
     display: flex;
@@ -360,9 +356,7 @@ li
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
     height: 7vw;
-    width: 12rem;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
 }
 #photos1 /*1ère ligne d'image dans la section hébergements*/
 {
@@ -706,6 +700,15 @@ footer
     flex-direction: column;
     width: 100%;
 }
+.section1 a:hover
+{
+    display: none;
+}
+
+.section2 a:hover
+{
+    display: none;
+}
 h1, h2
 {
     font-size: 25px;
@@ -771,7 +774,7 @@ nav a:hover
     flex-direction: column;
     padding: 0;
     width: 100%;
-    margin-left: 25px;
+    margin-left: 0;
 }
 .marqueur 
 {
@@ -813,8 +816,8 @@ nav a:hover
 }
 #filtres
 {
-    max-width: 500px;
-    padding: 15px;
+    width: 100%;
+    padding: 15px 0 15px 0;
     flex-wrap: wrap;
     row-gap: 2rem;
     column-gap: 2rem;
@@ -836,7 +839,7 @@ nav a:hover
 .contentinfo
 {
     width: 100%;
-    padding: 15px 0 15px 25px;
+    padding: 15px 0 15px;
 
 }
 .section1
@@ -918,7 +921,7 @@ aside
 .articlesection1
 {
     background-color: white;
-    width: 500px;
+    width: 100%;
     margin: auto;
     padding: 30px 0 0 0;
 }
@@ -980,7 +983,7 @@ aside
 }
 .fcheberg
 {
-    width: 430px;
+    width: 100%;
     height: 85px;
     position: relative;
     bottom: 3px;
@@ -988,7 +991,7 @@ aside
 .fccontent
 {
     width: 100%;
-    left: 15px;
+    
 }
 .afficher
 {
@@ -1000,13 +1003,14 @@ aside
 
 .section2
 {
-    width: 500px;
+    width: 100%;
     margin: auto;
 }
 .contentact
 {
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 #activites
 {
@@ -1061,22 +1065,22 @@ aside
 }
 .imageL
 {
-    width: 430px;
+    width: 100%;
     height: 180px;
 }
 .imageM
 {
-    width: 430px;
+    width: 100%;
     height: 180px;
 }
 .fcactivite
 {
-    width: 430px;
+    width: 100%;
     height: 50px;
 }
 .fcactiviteL
 {
-    width: 430px;
+    width: 100%;
     height: 50px;
 }
 
