@@ -24,7 +24,6 @@ nav a:hover
     border-top: 2px solid #0065FC; /*place un liseret bleu en haut du nav*/
     color: #0065FC;
     display: flex;
-    
 }
 nav a
 {
@@ -45,7 +44,6 @@ nav a
     transform: scale(1.05);
     transition-duration: 1s;
 }
-
 .section2 a:hover
 {
     transform: scale(1.05);
@@ -100,6 +98,7 @@ a
     display: flex; 
     justify-content: center; 
 }
+
 /*-----barre de recherche-----*/
 
 .searchbar
@@ -109,39 +108,42 @@ a
 }
 .fa-map-marker-alt
 {
-    margin-left: 5px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+}
+.fa-search
+{
+    display: none !important;
 }
 .marqueur
 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     background-color: #F2F2F2;
-    height: 40px;
-    width: 40px;
-    
+    height: 3.2rem;
+    width: 3.2rem;
 }
 #search
 {
-    height: 40px;
+    height: 3.2rem;
     width: 180px;
     border:1px solid #F2F2F2;
     font-family: 'Raleway';
-    font-size: 15px;
-    padding-left: 12px;
+    padding-left: 1rem;
 }
 .rechercher
 {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     background-color: #0065FC;
-    height: 40px;
-    width: 100px;
+    height: 3.2rem;
     color: white;
     font-family: 'Raleway';
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1.5rem;
 }
 
 /*-----Filtres-----*/
@@ -156,9 +158,10 @@ a
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
     width: 100%;
+    column-gap: 2vw;
 }
 /*icônes -(filtres)-*/
 .filtericons
@@ -171,8 +174,8 @@ a
     right: 4px;
     border: solid 1px #DEEBFF;
     border-radius: 100%;
-    width: 37px;
-    height: 37px;
+    width: 3.2rem;
+    height: 3.2rem;
     background-color: #DEEBFF;
     display: flex;
     justify-content: center;
@@ -214,7 +217,7 @@ a
 {
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 3.2rem;
     padding-right: 15px;
     border: 1px solid #CCCCCC;
     border-radius: 30px;
@@ -225,9 +228,8 @@ a
 
 #hebergements
 {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
-
 .section1
 {
     margin-top: 2rem;
@@ -235,7 +237,6 @@ a
     flex-direction: row;
     width: 100%;
 }
-
 .gridarticle
 {
     display: grid;
@@ -247,6 +248,8 @@ a
 .starsrate
 {
     display: flex;
+    position: relative;
+    bottom: 0.5rem;
 }
 .starsrate>i
 {
@@ -262,7 +265,7 @@ a
     margin-bottom: 0;
     margin-top: 0.3rem;
 }
-.figuresection1 
+.figuresection
 {  
     margin: 0;
     background-color: white;
@@ -270,70 +273,26 @@ a
     padding: 0.400rem;
     box-shadow: 3px 3px 10px #CCCCCC;
 }
-.figuresection2 
-{
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.figuresection3 
-{
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.figuresection4 
-{
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.figuresection5 
-{
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.figuresection6 
-{
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-
 .fcheberg /*figcaption des images partie hébergements*/
 {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 .heberglink
 {
     width: 100%;
 }
-
 .h3heberg
 {
     margin: 0;
 }
 .articlesection1
 {
-    border-radius: 20px;
+    border-radius: 2rem;
     padding: 2rem;
     background-color: #F2F2F2;
     width: 65%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .photoHeberg
 {
@@ -359,21 +318,33 @@ a
 }
 aside
 {   
-    margin-left: 32px;
-    border-radius: 20px;
+    margin-left: 2rem;
+    border-radius: 2rem;
     padding: 2rem;
     background-color: #F2F2F2;
     width: 30%;
+}
+.asidecontent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .poplink
 {
     width: 100%;
     height: 100%;
+    box-sizing: border-box; /*défini la façon totale dont un élément est calculé*/
 }
-.nuit
+.nuitpop
 {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+}
+.nuitheberg
+{
+    margin-top: 0.5rem;
 }
 .gridaside
 {
@@ -381,64 +352,38 @@ aside
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 2rem;
 }
-
-.figaside1 /*figures de la partie "les plus populaires"*/
+.figaside /*figures de la partie "les plus populaires"*/
 {
     display: flex;
+    height: 100%;
     margin: 0;
-    background-color: white;
     border-radius: 2rem;
-    padding: 0.400rem;
     box-shadow: 3px 3px 10px #cccccc;
-}
-.figaside2
-{
-    grid-row: 2;
-    display: flex;
-    margin: 0;
+    padding: 0.400rem;
     background-color: white;
     border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
-}
-.figaside3
-{
-    grid-row: 3;
-    display: flex;
-    margin: 0;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.400rem;
-    box-shadow: 3px 3px 10px #CCCCCC;
+    box-sizing: border-box; 
 }
 .fcpop /*figcaption de la partie "les plus populaires"*/
 {
-    background-color: white;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 0%;  
-    padding-left: 1rem;
+    width: 100%; 
+    padding-left: 0.5rem;
 }
-
+.imgasidebox
+{
+    position: relative;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
 .photoPop /*caractéristiques des images partie "populaires"*/
 {
     object-fit: cover;
-    width: 40%;
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
-}
-.photobleublanc
-{
-    object-fit: cover;
-    height: 134.8px;
-    width: 70%;
-    max-width: 100%;
-    max-height: 100%;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem; 
 }
 #photosaside
 {
@@ -455,7 +400,7 @@ aside
 }
 #activites
 {
-    margin-top: 50px;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 .activlink
@@ -465,50 +410,49 @@ aside
 .contentact
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .vieuxport
 {
-    min-height: 380px;
-    max-height: 380px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }   
 .pomegues
 {
-    min-height: 160px;
-    max-height: 160px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }
 .frioul
 {
-    min-height: 160px;
-    max-height: 160px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }
 .calanques
 {
-    min-height: 380px;
-    max-height: 380px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }
 .notredame
 {
-    min-height: 160px;
-    max-height: 160px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }
 .longchamp
 {
-    min-height: 160px;
-    max-height: 160px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 2rem;
 }
 .column /*pomegues + frioul et notredame + longchamp*/
 {
@@ -521,43 +465,35 @@ aside
 .imageM /*images de taille moyennes de la partie activités*/
 { 
     object-fit: cover;
-    box-shadow: 3px 3px 10px #CCCCCC;
     width: 100%;
     height: 140px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;   
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;   
 }
 .imageL /*images de grande taille (vieux port et calanques) partie activités*/
 {
     object-fit: cover;
-    box-shadow: 3px 3px 10px #CCCCCC;
     width: 100%;
     height: 360px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 .fcactiviteL /*figcaption des grandes images de la partie activité*/
 {
     display: flex;
-    position: relative;
-    bottom: 20px;
     background-color: white;
     height: 3rem;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 3px 3px 10px #CCCCCC;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     align-items: center;
 }
 .fcactivite /*figcaption des images moyennes de la partie activité*/
 {
     display: flex;
-    position: relative;
-    bottom: 20px;
     background-color: white;
     height: 3rem;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 3px 3px 10px #CCCCCC;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     align-items: center;
 }
 .fccontentact
@@ -686,7 +622,7 @@ p
 {
     font-size: 20px;
 }
-    .gridnav
+.gridnav
 {
     display: grid;
     width: 100%;
@@ -738,6 +674,7 @@ nav a:hover
 {
     margin: 0 2rem 1rem 2rem;
 }
+
 /*barre de recherche*/
 
 .txtsearch
@@ -751,6 +688,14 @@ nav a:hover
 {
     height: 3rem;
     width: 3rem;
+}
+.searchbtn
+{
+    display: none;
+}
+.fa-search
+{
+    display: block !important;
 }
 .fa-map-marker-alt
 {
@@ -790,8 +735,7 @@ nav a:hover
     width: 100%;
     padding: 15px 0 15px 0;
     flex-wrap: wrap;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    row-gap: 1rem;
 }
 .filtre
 {
@@ -826,7 +770,7 @@ aside
 {
     margin: auto;
     width: 100%;
-    padding: 0 0 30px;
+    padding: 0 0 2rem 0;
     border-radius: 0;
 }
 .populaires
@@ -834,35 +778,10 @@ aside
     margin-left: 2rem;
     margin-right: 2rem;
 }
-.figaside1
-{
-    min-height: 200px; 
-    max-height: 200px;
-    margin: 0 2rem;
-}
-.figaside2
-{
-    min-height: 200px; 
-    max-height: 200px;
-    margin: 0 2rem;
-}
-.figaside3
-{
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem;
-}
 .photoPop
 {
-    height: 200px;
-    width: 40%;
-    max-width: 100%;
-    max-height: 100%;
-}
-.photobleublanc
-{
-    height: 200px;
-    width: 41%;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -870,15 +789,15 @@ aside
 {
     margin-left: 1rem;
 }
-.nuit
+.nuitpop
 {
-    margin-left: 1rem;
+    margin: 0.5rem 0 0 1rem;
 }
 .star
 {
-    font-size: 120%;
+    font-size: 100%;
     position: relative;
-    top: 30px;
+    top: 1rem;
     margin-left: 1rem;
 }
 .fcpop
@@ -888,11 +807,19 @@ aside
 }
 .gridaside
 {
-    justify-content: center;
+    justify-content: initial;
     width: 100%;
 }
+.asidecontent
+{
+    justify-content: space-around;
+}
+.figaside
+{
+    margin: 0 2rem;
+}
 
-/*partie hébergements du responsive mobile*/
+/*partie hébergements du responsive*/
 
 .articlesection1
 {
@@ -910,30 +837,11 @@ aside
     display: flex;
     flex-direction: column;
 }
-.figuresection1
+.figuresection
 {
     margin: 0 2rem;
 }
-.figuresection2
-{
-    margin: 0 2rem;
-}
-.figuresection3
-{
-    margin: 0 2rem;
-}
-.figuresection4
-{
-    margin: 0 2rem;
-}
-.figuresection5
-{
-    margin: 0 2rem;
-}
-.figuresection6
-{
-    margin: 0 2rem;
-}
+
 .photoHeberg
 {
     width: 100%;
@@ -946,13 +854,17 @@ aside
     position: relative;
     bottom: 3px;
 }
+.nuitheberg
+{
+    margin: 0.5rem 1rem 0 0;
+}
+.starsrate
+{
+    top: 0.5rem;
+}
 .fccontent
 {
-    width: 100%;   
-}
-.h3heberg
-{
-    margin-left: 1rem
+    width: 100%; 
 }
 .afficher
 {
@@ -972,6 +884,7 @@ aside
     flex-direction: column;
     align-items: center;
     width: 100%;
+    row-gap: 2rem;
 }
 #activites
 {
@@ -979,38 +892,26 @@ aside
 }
 .vieuxport
 {
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 .pomegues
 {
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 .frioul
 {
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 .calanques
 {
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 .notredame
 {
-    min-height: 200px;
-    max-height: 200px;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 .longchamp
 {
-    min-height: 200px;
-    max-height: 200px;
     margin: 0 2rem;
 }
 .activlink
@@ -1020,6 +921,7 @@ aside
 .column
 {
     width: 100%;
+    row-gap: 2rem;
 }
 .imageL
 {
@@ -1050,7 +952,6 @@ aside
     display: grid;
     grid-template-columns: 100%;
     row-gap: 10px;
-    
 }
 .propos
 {
@@ -1112,7 +1013,5 @@ aside
     grid-row: 10;
     margin: 0 2rem 0 2rem;
 }
-
-
 
 }
