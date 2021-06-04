@@ -58,8 +58,6 @@ a
     color: black; /*applique la couleur aux liens*/
 }
 
-
-
 /*-----navigation-----*/
 
 .gridnav
@@ -187,7 +185,7 @@ a
 }
 .resulticon
 {
-    min-width: 2rem; /*rem = s'adapte à la taille de la police de l'élément*/
+    min-width: 2rem;
     min-height: 2rem;
     height: 2rem;
     width: 2rem;
@@ -254,7 +252,6 @@ a
 .starsrate>i
 {
     margin-left: 0.2rem;
-    
 }
 .star
 {
@@ -595,20 +592,8 @@ footer
 {
     .contenus /*div incluant Header, Section 1 et 2 s'arrêtant au footer*/
 {
-    display: flex;
-    margin: auto;
     padding: 0;
     justify-content: center;
-    flex-direction: column;
-}
-.section1 a:hover
-{
-    display: none;
-}
-
-.section2 a:hover
-{
-    display: none;
 }
 h1, h2
 {
@@ -633,7 +618,7 @@ p
 {
     grid-column: 1 / 2;
     grid-row: 1;
-    margin-left: 40px;
+    margin-left: 2rem;
 }
 .navheb
 {
@@ -675,7 +660,7 @@ nav a:hover
     margin: 0 2rem 1rem 2rem;
 }
 
-/*barre de recherche*/
+/*------barre de recherche------*/
 
 .txtsearch
 {
@@ -720,7 +705,7 @@ nav a:hover
     margin-left: 2rem;
 }
 
-/*filtres*/
+/*------filtres------*/
 
 .titleandfilter
 {
@@ -764,7 +749,7 @@ nav a:hover
     width: 100%;
 }
 
-/*partie aside du responsive*/
+/*------partie aside du responsive------*/
 
 aside
 {
@@ -819,7 +804,7 @@ aside
     margin: 0 2rem;
 }
 
-/*partie hébergements du responsive*/
+/*------partie hébergements du responsive------*/
 
 .articlesection1
 {
@@ -872,7 +857,7 @@ aside
     margin-left: 30px;
 }
 
-/*partie activités du responsive mobile*/
+/*-------partie activités du responsive-------*/
 
 .section2
 {
@@ -944,7 +929,7 @@ aside
     height: 50px;
 }
 
-/*Footer du responsive mobile*/
+/*-------Footer du responsive-------*/
 
 
 .wrapfooter
