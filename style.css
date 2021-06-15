@@ -211,7 +211,7 @@ a
 
 /*fin icônes -(filtres)-*/
 
-.filtre /*bordure des filtres*/
+.filtre
 {
     display: flex;
     align-items: center;
@@ -373,7 +373,7 @@ aside
     min-width: 33%;
     max-width: 33%;
 }
-.photoPop /*caractéristiques des images partie "populaires"*/
+.photoPop
 {
     object-fit: cover;
     position: absolute;
@@ -408,6 +408,13 @@ aside
 {
     display: flex;
     justify-content: space-between;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
 }
 .vieuxport
 {
@@ -451,15 +458,7 @@ aside
     box-shadow: 3px 3px 10px #cccccc;
     border-radius: 2rem;
 }
-.column /*pomegues + frioul et notredame + longchamp*/
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 22%;
-}
-
-.imageM /*images de taille moyennes de la partie activités*/
+.imageM
 { 
     object-fit: cover;
     width: 100%;
@@ -467,7 +466,7 @@ aside
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;   
 }
-.imageL /*images de grande taille (vieux port et calanques) partie activités*/
+.imageL
 {
     object-fit: cover;
     width: 100%;
@@ -475,16 +474,7 @@ aside
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
-.fcactiviteL /*figcaption des grandes images de la partie activité*/
-{
-    display: flex;
-    background-color: white;
-    height: 3rem;
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    align-items: center;
-}
-.fcactivite /*figcaption des images moyennes de la partie activité*/
+.fcactivite
 {
     display: flex;
     background-color: white;
