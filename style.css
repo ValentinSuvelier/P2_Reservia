@@ -343,6 +343,14 @@ aside
 {
     margin-top: 0.5rem;
 }
+.bluestar
+{
+    color: #0065FC;
+}
+.greystar
+{
+    color: #CCCCCC;
+}
 .gridaside
 {
     display: grid;
@@ -700,6 +708,12 @@ nav a:hover
 .titleandfilter
 {
     flex-direction: column;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.filtericons
+{
+    margin: 0;
 }
 .filtitle
 {
